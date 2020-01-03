@@ -2,15 +2,15 @@ variable "configuration" {
   default = {
     test = {
       region = "ap-southeast-1",
-      size = "a1.medium"
+      size = "t2.nano"
     }
     staging = {
       region = "ap-southeast-2",
-      size = "a1.large"
+      size = "t2.micro"
     }
     production = {
       region = "ap-northeast-2",
-      size = "a1.xlarge"
+      size = "t2.large"
     }
   }
 }
