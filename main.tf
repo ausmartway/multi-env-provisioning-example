@@ -2,6 +2,23 @@ terraform {
   required_version = ">= 0.12.0"
 }
 
+variable "configuration" {
+  default = {
+    test = {
+      region = "ap-southeast-1",
+      size = "t2.nano"
+    }
+    staging = {
+      region = "ap-southeast-2",
+      size = "t2.micro"
+    }
+    production = {
+      region = "ap-northeast-2",
+      size = "t2.large"
+    }
+  }
+}
+
 provider "aws" {
   region  = "${lookup(var.configuration, var.environment).region}"
 }
