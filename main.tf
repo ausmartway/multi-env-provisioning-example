@@ -32,6 +32,6 @@ resource "aws_instance" "ubuntu" {
     # TTL           = var.ttl
     # Owner         = var.owner
     # Description   = var.description
-    instance_type = var.instance_type
+    instance_type = "${lookup(var.configuration, var.environment).size}"
   }
 }
