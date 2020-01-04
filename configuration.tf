@@ -15,7 +15,7 @@ variable "configuration" {
   }
 }
 
-variable "enviroment" {
+variable "environment" {
     description="name of the enviroment"
     default="test"
 }
