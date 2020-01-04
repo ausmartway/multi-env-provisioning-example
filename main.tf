@@ -31,7 +31,6 @@ resource "aws_instance" "ubuntu" {
     name= "multiple-env-demo"
     TTL           = 1
     Owner         = "Yulei"
-    Description   = var.description
     instance_type = "${lookup(var.configuration, var.environment).size}"
   }
 }
