@@ -14,3 +14,9 @@ variable "configuration" {
     }
   }
 }
+
+variable "enviroment" {
+    description="name of the enviroment"
+    default="test"
+}
+
