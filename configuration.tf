@@ -20,3 +20,8 @@ variable "environment" {
     default="test"
 }
 
+variable "prefix" {
+  description="prifix of EC2 instances"
+  default="TFC"
+}
+
