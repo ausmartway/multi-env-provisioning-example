@@ -28,7 +28,7 @@ resource "aws_instance" "ubuntu" {
   availability_zone = "${lookup(var.configuration, var.environment).region}a"
 
   tags = {
-    name= "${prefix}-multiple-env-demo-${var.environment}"
+    Name= "${prefix}-multiple-env-demo-${var.environment}"
     TTL           = 1
     Owner         = "Yulei"
     instance_type = "${lookup(var.configuration, var.environment).size}"
