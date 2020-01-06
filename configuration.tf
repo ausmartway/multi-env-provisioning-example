@@ -17,11 +17,9 @@ variable "configuration" {
 
 variable "environment" {
     description="name of the enviroment"
-    default="test"
 }
 
 variable "prefix" {
   description="prifix of EC2 instances"
-  default="TFC"
 }
 
