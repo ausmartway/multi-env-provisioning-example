@@ -29,7 +29,7 @@ resource "aws_instance" "ubuntu" {
 
   tags = {
     Name= "${var.prefix}-multiple-env-demo-${var.environment}"
-    TTL           = 1
+    TTL           = 2
     Owner         = "Yulei"
     instance_type = "${lookup(var.configuration, var.environment).size}"
   }
