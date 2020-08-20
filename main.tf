@@ -26,12 +26,14 @@ data "aws_ami" "ubuntu" {
 //   ami               = "${data.aws_ami.ubuntu.id}"
 //   instance_type     = "${lookup(var.configuration, var.environment).size}"
 //   availability_zone = "${lookup(var.configuration, var.environment).region}a"
-
 //   tags = {
 //     Name= "${var.prefix}-multiple-env-demo-${var.environment}"
-//     TTL           = 2
-//     Owner         = "Yulei"
+//     TTL           = 1
+//     Owner         = "yulei@hashicorp.com"
+//     Region        = "APJ-ANZ"
+//     Purpose       = "demo"
+//     Terraform     = "true"
+//     TFE           = "true"
 //     instance_type = "${lookup(var.configuration, var.environment).size}"
-//     "testasdfasdfas" = "asdfasdfasdfasdf"
 //   }
 // }
