@@ -3,7 +3,8 @@ terraform {
 }
 
 provider "aws" {
-  region  = "${lookup(var.configuration, var.environment).region}"
+  region  = lookup(var.configuration, var.environment).region
+  // region  = "${lookup(var.configuration, var.environment).region}"
 }
 
 data "aws_ami" "ubuntu" {
