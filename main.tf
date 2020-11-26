@@ -35,6 +35,6 @@ resource "aws_instance" "ubuntu" {
     Purpose       = "demo"
     Terraform     = "true"
     TFE           = "true"
-    instance_type = "${lookup(var.configuration, var.environment).size}"
+    instance_type = lookup(var.configuration, var.environment).size
   }
 }
