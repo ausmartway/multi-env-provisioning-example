@@ -10,7 +10,7 @@ variable "configuration" {
     }
     production = {
       region = "ap-northeast-2",
-      size = "t2.large"
+      size = "t2.small"
     }
   }
 }
